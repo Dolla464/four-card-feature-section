@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Colors */
+/* Primary */
+:root {
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+/* Neutral */
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+/* global style */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' ,sans-serif;
+    font-size: 15px;
+}
+
+body {
+    background-color: var(--Very-Light-Gray);
+}
+
+/* start header home section */
+.header-home h5 {
+    color: var(--Very-Dark-Blue);
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.header-home h2 {
+    color: var(--Very-Dark-Blue);
+    font-size: 33px;
+    font-weight: 700;
+
+}
+
+.header-home p {
+    color: var(--Grayish-Blue);
+    width: 50%;
+    margin: auto;   
+}
+
+@media only screen and (max-width:576px){
+    .header-home h5 {
+        font-size: 20px;
+    }
+
+    .header-home h2 {
+        font-size: 25px;
+    }
+    
+    .header-home p {
+        width: 100%;
+    }
+}
+/* end header home section */
+
+/* start supervisor section */
+.Supervisor-content {
+    background-color: #fff;
+    border-top: 4px solid var(--Cyan);
+    border-radius: 10px;
+    margin-top: 148px;
+}
+
+.Supervisor-content h4 {
+    color: var(--Very-Dark-Blue);
+}
+
+.Supervisor-content p {
+    color: var(--Grayish-Blue);
+}
+
+/* end supervisor section */
+
+/* start team karma section */
+.team-builder {
+    background-color: #fff;
+    border-top: 4px solid var(--Red);
+    border-radius: 10px;
+}
+
+.team-builder h4 {
+    color: var(--Very-Dark-Blue);
+}
+
+.team-builder p {
+    color: var(--Grayish-Blue);
+}
+
+.karma {
+    border-top: 4px solid var(--Orange);
+}
+/* end team karma section */
+
+/* start Calculator section */
+.Calculator {
+    background-color: #fff;
+    border-top: 4px solid var(--Blue);
+    border-radius: 10px;
+    margin-top: 148px;
+}
+
+.Calculator h4 {
+    color: var(--Very-Dark-Blue);
+}
+
+.Calculator p {
+    color: var(--Grayish-Blue);
+}
+
+@media only screen and (max-width:992px) {
+    .Supervisor-content {
+        margin: 10px;
+    }
+
+    .team-builder {
+        margin: 10px;
+    }
+
+    .Calculator {
+        margin: 10px;
+    }
+}
+/* end Calculator section */
+
+/* start footer section */
+.attribution { 
+    font-size: 15px; 
+    text-align: center; 
+    color: var(--Grayish-Blue);
+}
+.attribution a { 
+    font-size: 20px;
+    color: var(--Very-Dark-Blue); 
+}
+
+.attribution a:hover {
+    color: var(--Orange);
+}
+
+.attribution a:nth-of-type(2):hover {
+    color: var(--Red);
+}
+
+@media only screen and (max-width:992px) {
+    .attribution ,.attribution a {
+        font-size: 10px;
+        font-weight: 600;
+    }
+}
+/* end footer section */
+
